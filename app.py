@@ -23,7 +23,7 @@ def initialize_gemini():
         raise ValueError("Missing GOOGLE_API_KEY environment variable. Please check your .env file.")
     
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('models/gemini-1.5-flash')
     return model
 
 def get_course_recommendations(subject, budget, skill_level, time_availability, learning_style):
